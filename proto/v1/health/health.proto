@@ -8,7 +8,7 @@ import "google/api/annotations.proto";
 service Health {
     rpc Check(HealthCheckRequest) returns (HealthCheckResponse) {
         option (google.api.http) = {
-            get: "/v1/health"
+            post: "/v1/health"
         };
     }
 }
